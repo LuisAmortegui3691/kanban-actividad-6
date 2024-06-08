@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero Kanban</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tablero Kanban - Monitorización de Sistemas y Redes</h1>
+        <div class="kanban-board">
+            <div class="kanban-column" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>Por Hacer</h2>
+                <div class="kanban-item" draggable="true" ondragstart="drag(event)" id="task1">Evaluación de la Infraestructura Actual</div>
+                <div class="kanban-item" draggable="true" ondragstart="drag(event)" id="task2">Implementación de Soluciones de Monitorización Avanzada</div>
+                <div class="kanban-item" draggable="true" ondragstart="drag(event)" id="task3">Configuración de Alertas Automáticas</div>
+            </div>
+            <div class="kanban-column" id="in-progress" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>En Progreso</h2>
+                <div class="kanban-item" draggable="true" ondragstart="drag(event)" id="task4">Capacitación del Personal de Seguridad</div>
+            </div>
+            <div class="kanban-column" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>Hecho</h2>
+                <div class="kanban-item" draggable="true" ondragstart="drag(event)" id="task5">Establecimiento de un Protocolo de Respuesta a Incidentes</div>
+                <div class="kanban-item" draggable="true" ondragstart="drag(event)" id="task6">Monitoreo Continuo y Evaluación</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
